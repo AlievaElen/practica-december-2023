@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./fonts/Proxima Nova/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="./index.html"><img src="./foto/logo.png" alt="" /> </a>
+      </div>
+      <div class="header__list">
+        <ul class="header__ul">
+          <a href="./error.html"><li>Цены и сроки</li></a>
+          <a href="./error.html"><li>Услуги</li></a>
+          <a href="./error.html"><li>О компании</li></a>
+          <a href="./error.html"><li>Контакты</li></a>
+          <a href="./error.html"><li>Оформить груз</li></a>
+        </ul>
+      </div>
+      <div class="header__box">
+        <button class="header__button">
+          <a href="./error.html">Оставить заявку</a>
+        </button>
+      </div>
+    </header>
+    <div class="main">
+      <!-- БЛОК 1 -->
+
+      <div class="main__slider">
+        <div class="slaider__foto">
+          <img src="./foto/Rectangle 3.png" alt="" />
+        </div>
+
+        <div class="main__headline">
+          <p class="main__p1">ПРЯМОЕ КАРГО<br />ИЗ КИТАЯ</p>
+          <p class="main__p2">
+            Доставляем любые грузы из Китая<br />по честной цене
+          </p>
+          <button class="headline__button">
+            <a href="./error.html">Рассчитать стоимость </a>
+            <img
+              class="headline__img"
+              src="./foto/arrow-circle-left 1.png"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- БЛОК 2 -->
+
+      <div class="main__form">
+        <div class="form__headline">
+          <p>ПОЛУЧИТЬ РАССЧЕТ СТОИМОСТИ<br />ДОСТАВКИ ВАШЕГО ГРУЗА</p>
+        </div>
+        <div class="form__list__one">
+          <img src="./foto/step.png" style="position: absolute; margin-top: -30px; padding-left: 50px;" alt=""> 
+          <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: start; padding: 40px; ">
+            <div class="list1__block1"> 
+            <p>Категория товара:</p><input type="text" required>
+            <p>Вес груза (кг):</p><input type="number" required>
+          
+          <div class="checkbox" style="margin-top: 39px;">
+              <input type="checkbox" id="one" style="width: 24px;height: 24px;border-radius: 10px;"><label for="one">Страховка</label>
+            </div>
+            <div class="checkbox"  style="margin-top: 14px;">
+              <input type="checkbox" id="two" style="width: 24px;height: 24px;border-radius: 10px;"><label for="two">Таможенное оформление</label>
+            </div>
+        </div>
+        <div class="list1__block2">
+          <p>Стоимость груза:</p> <input type="number" required>
+          <div class="list1__block2__p" style="display: flex; flex-direction: row; justify-content: space-between; width: 248px; align-items: center;"><p>Объем груза (м3):</p> <a style="font-size: 14px; color: #E58D35;" onclick="showErrorMessage()" href="">Рассчитать</a></div> <input type="text">
+          <p>Код ТН ВЭД:</p><input type="number" required>
+        </div>
+        
+          </div>
+          <div class="list1__block3" >
+          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding-left: 40px; padding-right: 40px;"><p>фотография.jpeg</p> <p style="color: red;" onclick="showErrorMessage()" >Удалить фото</p></div>
+          <input type="file" id="file-input">
+          <label id="file-input-label" for="file-input">Загрузить фото товара</label>
+        </div>
+        <button  style="margin-bottom: 10px; margin-top: 10px;" class="list__button1">
+          <a   onclick="showErrorMessage()">Следующий шаг </a>
+            <img
+              class="headline__img"
+              src="./foto/arrow-circle-left 1.png"
+              alt=""
+            />
+        </button>
+      </div>
+      
+      <div class="form__list__two"  >
+
+      </div>
+        <div class="form__foto">
+          <img
+            src="./foto/medium-shot-man-holding-clipboard_1-removebg 1.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- БЛОК 3 -->
+
+      <div class="main__container">
+        <p class="container__headline">ПОЧЕМУ СТОИТ ВЫБИРАТЬ ИМЕННО НАС?</p>
+        <div class="container__block">
+          <div class="block__1">
+            <img src="./foto/1.png" alt="" />
+          </div>
+          <div class="block__2"><img src="./foto/2.png" alt="" /></div>
+          <div class="block__3"><img src="./foto/3.png" alt="" /></div>
+          <div class="block__4"><img src="./foto/4.png" alt="" /></div>
+          <div class="block__5"><img src="./foto/5.png" alt="" /></div>
+          <div class="block__6"><img src="./foto/6.png" alt="" /></div>
+          <div class="block__7"><img src="./foto/7.png" alt="" /></div>
+          <div class="block__8"><img src="./foto/8.png" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- БЛОК 4 -->
+
+      <div class="main__delivery">
+        <p class="delivery__headline">ВАРИАНТЫ ДОСТАВКИ ГРУЗОВ ИЗ КИТАЯ</p>
+        <div class="cover">
+          <!-- <button class="left" onclick="leftScroll()">Left</button> -->
+          <div class="scroll-images">
+            <div class="scroll__box">
+              <img src="./foto/Rectangle 24.png" alt="" />
+              <p class="box__headline">Авто-обычная</p>
+              <div class="box__block">
+                <img src="./foto/calendar.png" alt="" />
+                <p>9-15 дней</p>
+                <img src="./foto/box.png" alt="" />
+                <p>от 5 кг</p>
+              </div>
+              <div class="box__text">
+                <p style="padding: 5px">от</p>
+                <h1>2,5</h1>
+                <p>$/кг</p>
+              </div>
+
+              <div class="box__button">
+                <button class="box__button1">
+                  <a href="./error.html">Оставить заявку</a>
+                </button>
+                <button class="box__button2">
+                  <a href="./error.html">Подробнее</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="scroll__box">
+              <img src="./foto/Rectangle 25.png" alt="" />
+              <p class="box__headline">Авто-ускоренная</p>
+              <div class="box__block">
+                <img src="./foto/calendar.png" alt="" />
+                <p>9-15 дней</p>
+                <img src="./foto/box.png" alt="" />
+                <p>от 5 кг</p>
+              </div>
+              <div class="box__text">
+                <p style="padding: 5px">от</p>
+                <h1>2,5</h1>
+                <p>$/кг</p>
+              </div>
+
+              <div class="box__button">
+                <button class="box__button1">
+                  <a href="./error.html">Оставить заявку</a>
+                </button>
+                <button class="box__button2">
+                  <a href="./error.html">Подробнее</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="scroll__box">
+              <img src="./foto/Rectangle 26.png" alt="" />
+              <p class="box__headline">Авиа</p>
+              <div class="box__block">
+                <img src="./foto/calendar.png" alt="" />
+                <p>9-15 дней</p>
+                <img src="./foto/box.png" alt="" />
+                <p>от 5 кг</p>
+              </div>
+              <div class="box__text">
+                <p style="padding: 5px">от</p>
+                <h1>2,5</h1>
+                <p>$/кг</p>
+              </div>
+
+              <div class="box__button">
+                <button class="box__button1">
+                  <a href="./error.html">Оставить заявку</a>
+                </button>
+                <button class="box__button2">
+                  <a href="./error.html">Подробнее</a>
+                </button>
+              </div>
+            </div>
+
+            <!-- <div class="scroll__box">
+              <img src="./foto/Rectangle 27.png" alt="" />
+              <p class="box__headline">Ж/д</p>
+              <div class="box__block">
+                <img src="./foto/calendar.png" alt="" />
+                <p>9-15 дней</p>
+                <img src="./foto/box.png" alt="" />
+                <p>от 5 кг</p>
+              </div>
+              <div class="box__text">
+                <p style="padding: 5px">от</p>
+                <h1>2,5</h1>
+                <p>$/кг</p>
+              </div>
+
+              <div class="box__button">
+                <button class="box__button1">
+                  <a href="./error.html">Оставить заявку</a>
+                </button>
+                <button class="box__button2">
+                  <a href="./error.html">Подробнее</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="scroll__box">
+              <img src="./foto/Rectangle 28.png" alt="" />
+              <p class="box__headline">Море</p>
+              <div class="box__block">
+                <img src="./foto/calendar.png" alt="" />
+                <p>9-15 дней</p>
+                <img src="./foto/box.png" alt="" />
+                <p>от 5 кг</p>
+              </div>
+              <div class="box__text">
+                <p style="padding: 5px">от</p>
+                <h1>2,5</h1>
+                <p>$/кг</p>
+              </div>
+
+              <div class="box__button">
+                <button class="box__button1">
+                  <a href="./error.html">Оставить заявку</a>
+                </button>
+                <button class="box__button2">
+                  <a href="./error.html">Подробнее</a>
+                </button>
+              </div>
+            </div> -->
+          </div>
+          <!-- <button class="right" onclick="rightScroll()">Right</button> -->
+        </div>
+      </div>
+
+      <!-- БЛОК 5 -->
+
+      <div class="main__servis">
+        <p class="servis__headline">УСЛУГИ</p>
+        <div class="main__card">
+          <div class="card__box">
+            <div class="card__img">
+              <img src="./foto/serves 23.png" alt="" />
+            </div>
+            <div class="card__text">
+              <h1>Выкуп товара</h1>
+              <p>
+                Компания - это полный комплекс <br />логистических услуг по
+                доставке грузов из <br />Китая в Россию - сборные грузы и
+                цельные <br />товарные партии, услуги посредника <br />ТаоБао,
+                КАРГО Китай-Россия.
+              </p>
+              <button class="card__button">
+                <a href="./error.html">Подробнее</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card__box">
+            <div class="card__img">
+              <img src="./foto/serves 24.png" alt="" />
+            </div>
+            <div class="card__text">
+              <h1>Страховка груза</h1>
+              <p>
+                Компания - это полный комплекс <br />логистических услуг по
+                доставке грузов из <br />Китая в Россию - сборные грузы и
+                цельные <br />товарные партии, услуги посредника <br />ТаоБао,
+                КАРГО Китай-Россия.
+              </p>
+              <button class="card__button">
+                <a href="./error.html">Подробнее</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card__box">
+            <div class="card__img">
+              <img src="./foto/serves 25.png" alt="" />
+            </div>
+            <div class="card__text">
+              <h1>Аренда склада</h1>
+              <p>
+                Компания - это полный комплекс <br />логистических услуг по
+                доставке грузов из <br />Китая в Россию - сборные грузы и
+                цельные <br />товарные партии, услуги посредника <br />ТаоБао,
+                КАРГО Китай-Россия.
+              </p>
+              <button class="card__button">
+                <a href="./error.html">Подробнее</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- <div class="card__box">
+            <div class="card__img">
+              <img src="./foto/serves 26.png" alt="" />
+            </div>
+            <div class="card__text">
+              <h1>Перевод денежных средств</h1>
+              <p>
+                Компания - это полный комплекс <br />логистических услуг по
+                доставке грузов из <br />Китая в Россию - сборные грузы и
+                цельные <br />товарные партии, услуги посредника <br />ТаоБао,
+                КАРГО Китай-Россия.
+              </p>
+              <button class="card__button">
+                <a href="./error.html">Подробнее</a>
+              </button>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- БЛОК 6 -->
+
+        <div class="main__company">
+          <div class="company__text">
+            <p style="font-size: 36px; font-weight: 700; padding-top: 50px;">О КОМПАНИИ</p>
+            <p>Компания Азия Карго - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия. Для вашего удобства есть тарифы на лёгкий и тяжелый куб. Мы работаем на рынке более 4 лет, а руководители компании занимаются логистикой уже более 11 лет.<br><br>Мы стремимся предоставить лучшие условия доставки и лучший сервис своим клиентам. Выбирая нас - вы выбираете качественную доставку оптимальную по цене и времени! Убедитесь в этом сами!</p>
+          </div>
+          <div class="company__img">
+            <img src="./foto/company.png" alt="">
+          </div>
+        </div>
+
+        <!-- БЛОК 7 -->
+
+        <div class="main__questions">
+          <div class="questions__headline">
+            <p>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</p>
+          </div>
+
+          <div class="questions__block">
+            <div  class="block__question" onclick="showErrorMessage()"><p>Как рассчитывается стоимость доставки?</p> <img src="./foto/Vector.png" alt=""></div>
+            <div class="block__question" onclick="showErrorMessage()"><p>Как происходит оплата за доставку груза?</p> <img src="./foto/Vector.png" alt=""></div>
+            <div class="block__question" onclick="showErrorMessage()"><p>Как быстро оформить заказ на доставку из Китая в Россию?</p> <img src="./foto/Vector.png" alt=""></div>
+            <div class="block__question__four" onclick="showErrorMessage()"> <div><p class="four__headline">Можно ли через вас оплатить товар поставщику?</p> <img src="./foto/Vector 2.png" alt=""></div> <p class="question__text">Да, мы предоставляем такую услугу, мы можем взять оплату товара в Китае на себя. Если у вас нет валютного счёта, то можете оплатить товар в рублях на наш счет в России.</p></div>
+            <div class="block__question" onclick="showErrorMessage()"><p>В чём особенность КАРГО доставки из Китая</p> <img src="./foto/Vector.png" alt=""></div>
+            <div class="block__question" onclick="showErrorMessage()"><p>Какой срок доставки из Китая?</p><img src="./foto/Vector.png" alt=""></div>
+          </div>
+          <div class="questions__form">
+            <p class="form__headline__two">Остались вопросы?</p>
+            <p class="form__p">Оставьте заявку и наш менеджер ответит вам в ближайшее время</p>
+            <input type="text" placeholder="Имя" pattern="А-Я; а-я" style="height: 56px; width: 310px; background-color: #fff; border: none; border-radius: 10px; "> 
+            <input type="number" placeholder="Телефон" pattern="0-9" style="height: 56px; width: 310px; background-color: #fff; border: none; border-radius: 10px; ">
+            <input type="email" placeholder="email" style="height: 56px; width: 310px; background-color: #fff; border: none; border-radius: 10px; ">
+            <input type="textarea" placeholder="Ваш запрос" style="height: 70px; width: 310px; background-color: #fff; border: none; border-radius: 10px; ">
+            <button class="questions__button">
+              <a href="./error.html">Отправить запрос </a><img
+              class="headline__img"
+              src="./foto/arrow-circle-left 1.png"
+              alt=""
+            />
+            </button>
+          </div>
+        </div>
+
+        <!-- БЛОК 8 -->
+
+        <div class="main__about">
+          <div class="about__headline">
+            <h1 class="about__p1" >ГОТОВЫ К СОТРУДНИЧЕСТВУ?</h1>
+            <p class="about__p2">Зарегистрируйте груз!</p>
+          </div>
+          <div  class="about__blocks">
+            <div class="about__block1">
+            <img src="./foto/• Для того, чтобы начать сотрудничество, необходимо оформить груз указав информацию о содержимом груза, его стоимость и количество. А т.png" alt="">
+            <img src="./foto/main 2.png" alt="" style="padding-top: 105px; padding-right: 100px;">
+          </div>
+
+          <div class="about__block2"> <img src="./foto/main 1.png" alt="" style="margin-bottom: 105px; padding-left: 10px;"><div class="block2__p"> <img src="./foto/• После отправки груза на наш склад в Китае, Вам обязательно нужно указать трек-номер для отслеживания посылок по Китаю для каждой пози.png" alt="">
+            <button class="about__button">
+              <a href="./error.html">Оформить груз </a>
+              <img
+              class="headline__img"
+              src="./foto/arrow-circle-left 1.png"
+              alt=""
+            />
+            </button></div>
+          </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__one"><a href="./index.html"><img src="./foto/logo.png" alt="" /> </a>
+      <p>8(800)600-18-69 <br>
+        info@cargoasia.info <br>
+        Адрес в Китае: <br>
+        浙江省金华市义乌市后宅街道洪华小区5 <br> 栋一单元一楼RT789库房 高建军 电话<br> 15966660379</p>
+        <div class=" ">
+          <a href="https://instagram.com/"><img src="./foto/005-instagram.png" alt=""></a>
+          <a href="https://vk.com/"><img src="./foto/015-vkontakte.png" alt=""></a>
+          <a href="https://t.me/telegram"><img src="./foto/telegram.png" alt=""></a>
+        </div>
+      </div>
+      <div class="footer__two">
+        <ul> <p style="font-family: 'Proxima Nova Regular'; font-size: 20px; color: white; font-weight: 500;">Грузоперевозки</p>
+          <li><a href="./error.html">Цены и сроки</a></li>
+          <li><a href="./error.html"> Услуги</a></li>
+          <li><a href="./error.html">О компании</a></li>
+          <li><a href="./error.html">Контакты</a></li>
+          <li><a href="./error.html">Оформить груз</a></li>
+        </ul>
+      </div>
+      <div  class="footer__tree">
+        <ul>
+          <p  style="font-family: 'Proxima Nova Regular'; font-size: 20px; color: white; font-weight: 500;">Услуги</p>
+          <li><a href="">Выкуп товара</a> </li>
+          <li><a href="">Страховка груза</a> </li>
+          <li><a href="">Аренда склада</a></li>
+          <li><a href="">Перевод денежных средств</a></li>
+        </ul>
+      </div>
+      <div class="footer__four">
+        <ul>
+          <p  style="font-family: 'Proxima Nova Regular'; font-size: 20px; color: white; font-weight: 500;">Информация</p>
+          <li><a href="">Отзывы</a></li>
+          <li><a href="">Требования к грузу</a></li>
+          <li><a href="">Договор-оферта</a></li>
+          <li><a href="">Как заключить договор</a></li>
+          <li><a href="">Способы оплаты услуг</a></li>
+          <li><a href="">Документы</a></li>
+          <li><a href="">Статьи</a></li>
+        </ul>
+      </div>
+      
+    </footer>
+
+
+
+    <script>function showErrorMessage() {
+      alert("Упс, кажется что-то пошло не так");
+    }</script>
+  </body>
+</html>
