@@ -9,24 +9,28 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <a href="./index.html"><img src="./foto/logo.png" alt="" /> </a>
+      <div class="header__logo header__content">
+        <a href="./index.html"><img class="" src="./foto/logo.png" alt="" /> </a>
       </div>
       <div class="header__list">
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <label for="burger-checkbox" class="burger"></label>
         <ul class="header__ul">
-          <a href="./error.html"><li>Цены и сроки</li></a>
-          <a href="./error.html"><li>Услуги</li></a>
-          <a href="./error.html"><li>О компании</li></a>
-          <a href="./error.html"><li>Контакты</li></a>
-          <a href="./error.html"><li>Оформить груз</li></a>
+          <a class="menu-item" href="./error.html"><li>Цены и сроки</li></a>
+          <a class="menu-item" href="./error.html"><li>Услуги</li></a>
+          <a class="menu-item" href="./error.html"><li>О компании</li></a>
+          <a class="menu-item" href="./error.html"><li>Контакты</li></a>
+          <a class="menu-item" href="./error.html"><li>Оформить груз</li></a>
         </ul>
-      </div>
-      <div class="header__box">
+        <div class="header__box header__content">
         <button class="header__button">
           <a href="./error.html">Оставить заявку</a>
         </button>
       </div>
+      </div>
+      
     </header>
+    
     <div class="main">
       <!-- БЛОК 1 -->
 
@@ -59,7 +63,7 @@
         </div>
         <div class="form__list__one">
           <img src="./foto/step.png" style="position: absolute; margin-top: -30px; padding-left: 50px;" alt=""> 
-          <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: start; padding: 40px; ">
+          <div class="form__listform"  style="display: flex; justify-content: space-between; flex-direction: row; align-items: start; padding: 40px; ">
             <div class="list1__block1"> 
             <p>Категория товара:</p><input type="text" required>
             <p>Вес груза (кг):</p><input type="number" required>
@@ -108,17 +112,17 @@
 
       <div class="main__container">
         <p class="container__headline">ПОЧЕМУ СТОИТ ВЫБИРАТЬ ИМЕННО НАС?</p>
-        <div class="container__block">
-          <div class="block__1">
+        <div class="container__block pic-ctn">
+          <div class="block__1 pic">
             <img src="./foto/1.png" alt="" />
           </div>
-          <div class="block__2"><img src="./foto/2.png" alt="" /></div>
-          <div class="block__3"><img src="./foto/3.png" alt="" /></div>
-          <div class="block__4"><img src="./foto/4.png" alt="" /></div>
-          <div class="block__5"><img src="./foto/5.png" alt="" /></div>
-          <div class="block__6"><img src="./foto/6.png" alt="" /></div>
-          <div class="block__7"><img src="./foto/7.png" alt="" /></div>
-          <div class="block__8"><img src="./foto/8.png" alt="" /></div>
+          <div class="block__2 pic"><img src="./foto/2.png" alt="" /></div>
+          <div class="block__3 pic"><img src="./foto/3.png" alt="" /></div>
+          <div class="block__4 pic"><img src="./foto/4.png" alt="" /></div>
+          <div class="block__5 pic"><img src="./foto/5.png" alt="" /></div>
+          <div class="block__6 pic"><img src="./foto/6.png" alt="" /></div>
+          <div class="block__7 pic"><img src="./foto/7.png" alt="" /></div>
+          <div class="block__8 pic"><img src="./foto/8.png" alt="" /></div>
         </div>
       </div>
 
@@ -340,7 +344,7 @@
 
         <div class="main__company">
           <div class="company__text">
-            <p style="font-size: 36px; font-weight: 700; padding-top: 50px;">О КОМПАНИИ</p>
+            <p class="company__head" style="font-size: 36px; font-weight: 700; padding-top: 50px;">О КОМПАНИИ</p>
             <p>Компания Азия Карго - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия. Для вашего удобства есть тарифы на лёгкий и тяжелый куб. Мы работаем на рынке более 4 лет, а руководители компании занимаются логистикой уже более 11 лет.<br><br>Мы стремимся предоставить лучшие условия доставки и лучший сервис своим клиентам. Выбирая нас - вы выбираете качественную доставку оптимальную по цене и времени! Убедитесь в этом сами!</p>
           </div>
           <div class="company__img">
@@ -389,11 +393,16 @@
           </div>
           <div  class="about__blocks">
             <div class="about__block1">
-            <img src="./foto/• Для того, чтобы начать сотрудничество, необходимо оформить груз указав информацию о содержимом груза, его стоимость и количество. А т.png" alt="">
-            <img src="./foto/main 2.png" alt="" style="padding-top: 105px; padding-right: 100px;">
+            <p>• Для того, чтобы начать сотрудничество, необходимо оформить груз указав информацию о содержимом груза, его стоимость и количество. А так-же прикрепив фотографии к заявке. <br><br>
+              • Если требуется проверка товара на соответсвие количеству, то при оформлении груза на нашем сайте укажите это в графе "Примечание". Данная услуга платная и составляет 3 юаня за одну позицию в заказе. Любые дополнительные проверки груза обсуждаются индивидуально в том числе и их стоимость. <br><br>
+              • До отправки груза на наш склад в Китае обязательно позаботьтесь о том, чтобы сделать маркировку, с номером Вашего заказа у нас на сайте, для каждой внешней коробки, чтобы мы смогли определить именно Ваш груз. Если у Вас нет возможности сделать это самостоятельно, то попросите об этом своего поставщика.</p>
           </div>
-
-          <div class="about__block2"> <img src="./foto/main 1.png" alt="" style="margin-bottom: 105px; padding-left: 10px;"><div class="block2__p"> <img src="./foto/• После отправки груза на наш склад в Китае, Вам обязательно нужно указать трек-номер для отслеживания посылок по Китаю для каждой пози.png" alt="">
+          <div class="about__block2"><img class="about__img" src="./foto/main 2.png" alt=""></div>
+          <div class="about__block3"> 
+            <img class="about__img" src="./foto/main 1.png" alt="" >
+          </div>
+          <div class="about__block4"><p>• После отправки груза на наш склад в Китае, Вам обязательно нужно указать трек-номер для отслеживания посылок по Китаю для каждой позиции в заказе. Внести трек-номер можно на странице заказа. Трек-номер - это ещё одна мера для идентификации Вашего груза на нашем складе. 
+            <br><br>• Если Вы оформили груз по нашей инструкции и сделали все правильно, то при получении Вашего груза на складе в Китае статус заказа изменится на "На складе".</p>
             <button class="about__button">
               <a href="./error.html">Оформить груз </a>
               <img
@@ -402,7 +411,7 @@
               alt=""
             />
             </button></div>
-          </div>
+          
           </div>
           
         </div>
@@ -457,8 +466,12 @@
 
 
 
-    <script>function showErrorMessage() {
+    <script>
+    function showErrorMessage() {
       alert("Упс, кажется что-то пошло не так");
-    }</script>
+    }
+
+    
+    </script>
   </body>
 </html>
