@@ -762,7 +762,7 @@ ul a:hover{
 
 @media screen and (max-width: 450px) {
 body{
-    max-width: 450px;
+    width: 450px;
 }
 
 .header {
