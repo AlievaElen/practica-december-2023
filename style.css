@@ -1454,4 +1454,7 @@ margin-top: -100px;
 .footer__four{
     display: none;
 }
+.error__foto img{
+    width: 100%;
+}
 }
