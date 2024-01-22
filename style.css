@@ -28,7 +28,10 @@ body{
     justify-content: space-around;
     height: 50px;
 }
+.header__logo img{
+    width: 70%;
 
+}
 .header__ul a{
     color: white;
     text-decoration: none;
