@@ -12,6 +12,7 @@ body{
     justify-content: center;
     margin-top: 25px;
     flex-direction: row;
+    align-items: center;
 } 
 .header__ul{
     list-style-type: none;
@@ -27,6 +28,7 @@ body{
     justify-content: space-around;
     height: 50px;
 }
+
 .header__ul a{
     color: white;
     text-decoration: none;
