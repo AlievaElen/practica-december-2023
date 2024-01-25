@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./avto.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico" />
+    <link rel="stylesheet" href="./registration.css">
+    <link rel="stylesheet" href="./fonts/Proxima Nova/style.css" />
 </head>
 <body>
   <header class="header">
@@ -32,32 +32,26 @@
     </div>
   </header>
       <main class="main">
-        <div class="scroll__box">
-            <img src="./foto/Rectangle 24.png" alt="" />
-            <p class="box__headline">Авто-обычная</p>
-            <div class="box__block">
-              <img class="card__img" src="./foto/calendar.png" alt="" />
-              <p>9-15 дней</p>
-              <img class="card__img" src="./foto/box.png" alt="" />
-              <p>от 5 кг</p>
-            </div>
-            <div class="box__text">
-              <p style="padding: 5px">от</p>
-              <h1>2,5</h1>
-              <p>$/кг</p>
-            </div>
-
-            <div class="box__button">
-              <button class="box__button1">
-                <a href="./registration.html">Оставить заявку</a>
-              </button>
-              
-            </div>
+        <div class="main__headline">
+            <h1>ХОТИТЕ ОФОРМИТЬ ЗАЯВКУ?</h1>
+            <p>Зарегистрируйтесь!</p>
+        </div>
+        <div class="main__registr">
+          <div class="register__one">
+            <input placeholder="Имя" type="text">
+            <input placeholder="Email" type="email">
+            <input placeholder="Ваш возраст" type="number" pattern="18>">
           </div>
-          <div class="main__text">
-            <h1 class="main__headline">ОБ УСЛУГЕ</h1>
-            <p class="main__textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores magni voluptate officia repellat reiciendis praesentium a hic dignissimos dolore nam, quo officiis deserunt illum culpa mollitia quis facilis rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illum molestiae sit a repellendus quas aspernatur iusto provident dicta perferendis quis asperiores, amet inventore, quos sequi corrupti nisi repellat. Voluptas.</p>
+          <div class="register__two">
+            <input placeholder="Введите пароль" type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <input placeholder="Подтвердите пароль" type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <button class="reg_btn" type="submit">Создайте аккаунт</button>
+          </div>      
           </div>
+            
+        <div class="main__enter">
+            <p>Уже есть аккаунт? <a href="./enter.html">Войти</a></p>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer__one"><a href="./index.html"><img src="./foto/logo.png" alt="" /> </a>
@@ -103,6 +97,5 @@
         </div>
         
       </footer>
-
 </body>
 </html>
