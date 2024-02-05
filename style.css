@@ -413,10 +413,10 @@ font-family: 'Proxima Nova Regular';
 }
 .card__button{
     height: 50px;
-        width: 153px;
-        border-radius: 25px;
-        border-color: #E58D35;
-        background-color: #ffffff00;
+    width: 153px;
+    border-radius: 25px;
+    border-color: #E58D35;
+    background-color: #ffffff00;
 }
 .card__button a {
     color: #ffffff;
